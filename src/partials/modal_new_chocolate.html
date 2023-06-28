@@ -1,0 +1,97 @@
+<div class="modal modal-subscribe" data-modal="2">
+  <picture>
+    <source
+      srcset="
+        /img/our-new-chocolate/tetiana-bykovets-desktop.webp    1x,
+        /img/our-new-chocolate/tetiana-bykovets-desktop@2x.webp 2x
+      "
+      media="(min-width: 1200px)"
+      type="image/webp"
+    />
+    <source
+      srcset="
+        /img/our-new-chocolate/tetiana-bykovets-desktop.jpg    1x,
+        /img/our-new-chocolate/tetiana-bykovets-desktop@2x.jpg 2x
+      "
+      media="(min-width: 1200px)"
+    />
+    <!-- ---TABLET---- -->
+    <source
+      srcset="
+        /img/our-new-chocolate/tetiana-bykovets-tablet.webp    1x,
+        /img/our-new-chocolate/tetiana-bykovets-tablet@2x.webp 2x
+      "
+      media="(min-width: 768px)"
+      type="image/webp"
+    />
+    <source
+      srcset="
+        /img/our-new-chocolate/tetiana-bykovets-tablet.jpg    1x,
+        /img/our-new-chocolate/tetiana-bykovets-tablet@2x.jpg 2x
+      "
+      media="(min-width: 768px)"
+    />
+    <!-- -----MOBILE----- -->
+    <source
+      srcset="
+        /img/our-new-chocolate/tetiana-bykovets-mobile.webp    1x,
+        /img/our-new-chocolate/tetiana-bykovets-mobile@2x.webp 2x
+      "
+      media="(min-width: 375px)"
+      type="image/webp"
+    />
+    <source
+      srcset="
+        /img/our-new-chocolate/tetiana-bykovets-mobile.jpg    1x,
+        /img/our-new-chocolate/tetiana-bykovets-mobile@2x.jpg 2x
+      "
+      media="(min-width: 375px)"
+    />
+    <!-- ------MiN_WIDTH:320PX------------ -->
+    <source
+      srcset="
+        /img/our-new-chocolate/tetiana-bykovets-mobile.webp    1x,
+        /img/our-new-chocolate/tetiana-bykovets-mobile@2x.webp 2x
+      "
+      media="(max-width: 374px)"
+      type="image/webp"
+    />
+    <source
+      srcset="
+        /img/our-new-chocolate/tetiana-bykovets-mobile.jpg    1x,
+        /img/our-new-chocolate/tetiana-bykovets-mobile@2x.jpg 2x
+      "
+      media="(max-width: 374px)"
+    />
+    <img
+      class="subscribe-img"
+      src="/img/our-new-chocolate/tetiana-bykovets-mobile.jpg"
+      alt="our-new-chocolate"
+    />
+  </picture>
+
+  <button type="button" class="modal-close-btn js-modal-close">
+    <svg class="modal-close-icon" width="16" height="16">
+      <use href="./img/sprite.svg#icon-x-close"></use>
+    </svg>
+  </button>
+  <div class="top-pozition">
+    <h2 class="text-modal-open">
+      Explore our<br />
+      <span class="subscribe-item-page">new chocolate </span>first!
+    </h2>
+    <form class="modal-form">
+      <input
+        id="user-mail"
+        name="user-name"
+        type="email"
+        class="modal-form-input"
+        placeholder="Enter your email"
+        required
+      />
+      <button type="submit" class="modal-form-subscribe">Subscribe</button>
+    </form>
+  </div>
+</div>
+
+<div class="overlay overlay-subscribe js-overlay-modal"></div>

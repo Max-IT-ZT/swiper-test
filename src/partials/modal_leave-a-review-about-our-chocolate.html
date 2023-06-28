@@ -1,0 +1,70 @@
+<div class="modal leave-modal" data-modal="3">
+  <!--   Svg иконка для закрытия окна  -->
+  <button type="button" class="leave-modal_cross js-modal-close">
+    <svg class="leave-modal_svg" width="24" height="24">
+      <use href="./img/sprite.svg#icon-x-close"></use>
+    </svg>
+  </button>
+  <h2 class="leave-subtitle">
+    LEAVE A REVIEW ABOUT
+    <span class="leave--subtitle-text">OUR CHOCOLATE</span>
+  </h2>
+  <form class="leave-modal-form">
+    <div class="leave-modal-form-main-container">
+      <input
+        id="userss-name"
+        type="text"
+        placeholder="Name"
+        class="leave-modal-input"
+        name="user-name"
+        required
+        pattern="^[a-zA-Zа-яА-Яї-Їє-Єі-І]+$"
+        minlength="2"
+      />
+    </div>
+    <div class="leave-modal-form-main-container">
+      <div class="leave-container-input">
+        <input
+          id="mails-id"
+          type="email"
+          placeholder="Enter your email"
+          class="leave-modal-input"
+          name="mail"
+          required
+        />
+      </div>
+    </div>
+    <div class="leave-modal-form-main-container">
+      <div class="leave-container-input-mobile">
+        <input
+          id="phones-id"
+          placeholder="Phone number"
+          type="tel"
+          class="leave-modal-input input-svg-ua modal-tel-form"
+          name="phone"
+          required
+          pattern="^[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+          title="+380-xx-xxx-xx-xx"
+        />
+
+        <div class="leave-form-icon-phon-c">
+          <svg class="leave-form-icon-phone" height="24" width="24">
+            <use class="leave-svg" href="./img/sprite.svg#icon-LeftIcon"></use>
+          </svg>
+          <p class="leave-number">+380</p>
+        </div>
+      </div>
+    </div>
+    <div class="leave-modal-form-main-container">
+      <textarea
+        class="leave-modal-textarea"
+        placeholder="Text input"
+        name="user-comment"
+      ></textarea>
+    </div>
+    <button type="submit" class="leave-btn">Send</button>
+  </form>
+</div>
+
+<!--! ================================Бекдроп для модалки================================ -->
+<div class="overlay leave-overlay js-overlay-modal"></div>

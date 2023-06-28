@@ -1,0 +1,330 @@
+.leave-modal {
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  max-width: 311px;
+  height: 100%;
+  max-height: 471px;
+  background: var(--body-bc);
+  border-radius: 15px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+  box-shadow: 0 3px 10px -0.5px rgba(255, 255, 255, 0.4);
+  padding: 32px 24px;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.leave-modal_cross {
+  fill: var(--black-color);
+  padding: 0;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+.leave-modal_cross:hover,
+.leave-modal_cross:focus {
+  fill: var(--orange-color);
+}
+
+.leave-subtitle {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  /* identical to box height, or 120% */
+  text-align: center;
+  letter-spacing: -0.03em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
+.leave--subtitle-text {
+  color: var(--orange-color);
+}
+.leave-this-products {
+  margin-bottom: 32px;
+}
+.leave-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+.leave-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 263px;
+  background: var(--white-color);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  padding: 8px 16px;
+}
+.leave-tex-card {
+  padding: 6px 16px;
+  background: var(--body-bc);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+}
+
+.leave-modal-form-main-container {
+  margin-bottom: 14px;
+}
+.leave-modal-label-name {
+  display: block;
+  margin-bottom: 8px;
+}
+.leave-modal-label {
+  display: block;
+  margin-bottom: 8px;
+}
+.leave-modal-label-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  /* identical to box height, or 117% */
+  color: #000000;
+}
+.container-input-name::placeholder {
+  display: flex;
+  align-items: center;
+  color: rgba(64, 64, 64, 0.3);
+}
+.container-input-name {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+}
+.leave-modal-input {
+  padding: 14px 18px;
+  width: 100%;
+  max-height: 45px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  background-color: transparent;
+  outline: transparent;
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+}
+
+.buy-now-container-input-mobile {
+  position: relative;
+}
+.input-svg-ua {
+  padding-left: 106px;
+}
+.leave-form-icon-phon-c {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  transform: translateY(-50%);
+}
+.leave-container-input-svg {
+  position: relative;
+}
+.leave-form-icon-phone {
+  width: 24px;
+  height: 24px;
+}
+.leave-number {
+  color: #000000;
+  padding-right: 10px;
+  border-right: 1.5px solid rgba(17, 17, 17, 0.05);
+}
+.leave-form-icon {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-50%);
+}
+.leave-container-input-mobile {
+  position: relative;
+}
+
+.modal-label {
+  display: block;
+  margin-bottom: 8px;
+}
+.leave-modal-textarea {
+  resize: none;
+  width: 100%;
+  min-height: 89px;
+  padding: 14px 18px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+  background-color: transparent;
+  outline: transparent;
+}
+
+.leave-btn {
+  padding: 12px 28px;
+  min-width: 120px;
+  font-weight: 600;
+  line-height: 1.21; /* 17px/14px */
+  background: var(--orange-color);
+  border-radius: 100px;
+  border: none;
+  color: var(--white-color);
+  margin-right: auto;
+}
+.leave-btn:hover,
+.leave-btn:focus {
+  background: var(--lightorange-color);
+  color: var(--orange-color);
+}
+.leave-btn:disabled {
+  background-color: rgb(234, 234, 234);
+  color: rgb(120, 120, 120);
+}
+.leave-overlay {
+  /* Скрываем подложку  */
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.leave-modal.active,
+.leave-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+@media screen and (min-width: 768px) {
+  .leave-modal {
+    min-width: 517px;
+    max-height: 628px;
+    padding: 40px;
+  }
+  .leave-modal_cross {
+    width: 28px;
+    height: 28px;
+  }
+  .leave-modal_cross {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+  .leave-subtitle {
+    font-size: 24px;
+    line-height: 1.17; /* 28px/24 */
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+  }
+  .leave-this-products {
+    margin-bottom: 40px;
+  }
+  .leave-list {
+    display: flex;
+    flex-direction: row;
+    column-gap: 16px;
+  }
+  .leave-item {
+    padding: 24px 20px 18px 20px;
+    display: flex;
+    flex-direction: column;
+    min-width: 160px;
+    min-height: 196px;
+  }
+  .leave-tex-card {
+    padding: 8px 29px;
+  }
+
+  .leave-modal-form-main-container {
+    margin-bottom: 18px;
+  }
+  .leave-modal-label-name {
+    display: block;
+    margin-bottom: 8px;
+  }
+  .leave-modal-label-text {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+  .container-input-name::placeholder {
+    font-size: 18px;
+    line-height: 1.22;
+    color: rgba(64, 64, 64, 0.3);
+  }
+  .container-input-name {
+    display: flex;
+    flex-direction: row;
+    column-gap: 21px;
+  }
+  .leave-modal-input {
+    padding: 22px 24px;
+    max-height: 66px;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+  .leave-modal-input::placeholder {
+    font-size: 18px;
+    line-height: 1.22;
+    color: rgba(64, 64, 64, 0.3);
+  }
+  .leave-form-icon-phone {
+    width: 32px;
+    height: 32px;
+  }
+  .input-svg-ua {
+    padding-left: 177px;
+  }
+  .leave-number {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    color: #000000;
+    padding-right: 32px;
+    border-right: 1.5px solid rgba(17, 17, 17, 0.05);
+  }
+  .leave-form-icon-phon-c {
+    column-gap: 18px;
+    left: 24px;
+  }
+  .leave-container-input-svg {
+    position: relative;
+  }
+  .leave-form-icon {
+    column-gap: 8px;
+    right: 14px;
+  }
+
+  .modal-label {
+    margin-bottom: 8px;
+  }
+  .leave-modal-textarea {
+    min-height: 137px;
+    padding: 22px 24px;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+  .leave-modal-textarea::placeholder {
+    font-size: 18px;
+    line-height: 1.22;
+    color: rgba(64, 64, 64, 0.3);
+  }
+  .leave-btn {
+    padding: 14px 40px;
+    min-width: 133px;
+  }
+}

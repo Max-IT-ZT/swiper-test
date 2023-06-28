@@ -1,0 +1,199 @@
+/*! Виконує Victor Hromadskyi */
+/* =============== GENERAL =============== */
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 14px 20px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-right: 4px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.03em;
+}
+.logo-decor {
+  font-style: italic;
+}
+
+/* =============== MOBILE MENU =============== */
+.mobile-menu-open-btn {
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  line-height: 0;
+}
+.mobile-menu-open-btn-icon {
+  stroke: var(--black-color);
+}
+.mobile-menu {
+  position: fixed;
+  max-width: 220px;
+  max-height: 830px;
+  top: 0;
+  right: 0;
+  background-color: var(--darkviolet-color);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.mobile-menu.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  z-index: 84;
+}
+.mobile-menu-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 460px;
+  height: 830px;
+  padding: 136px 44px 20px 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mobile-menu-close-btn {
+  position: absolute;
+  display: flex;
+  top: 20px;
+  right: 20px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+}
+.mobile-menu-close-icon {
+  fill: var(--white-color);
+  width: 28px;
+  height: 28px;
+}
+.mobile-menu-close-icon:hover {
+  fill: var(--orange-color);
+}
+.header-nav-list-mobile {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+  color: var(--white-color);
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-nav-item-mobile:hover {
+  color: var(--orange-color);
+}
+.social-networks-mobile {
+  display: flex;
+  gap: 18px;
+}
+.social-networks-icon-mobile {
+  fill: transparent;
+  stroke: var(--white-color);
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-networks-icon-mobile:hover {
+  stroke: var(--orange-color);
+}
+.header-icon-focus:focus {
+  stroke: var(--orange-color);
+}
+@media screen and (max-width: 1199px) {
+  .header-nav,
+  .social-networks {
+    display: none;
+  }
+}
+
+/* =============== MOBILE =============== */
+
+@media screen and (min-width: 375px) {
+  .header-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 375px;
+  }
+  .mobile-menu-container {
+    gap: 400px;
+  }
+}
+
+/* =============== TABLET =============== */
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    width: 768px;
+    padding: 24px 32px;
+  }
+  .mobile-menu-open-btn {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* =============== DESCTOP =============== */
+
+@media screen and (min-width: 1200px) {
+  .header-container {
+    width: 1200px;
+    padding: 24px 32px 32px 32px;
+  }
+  .header-nav {
+    display: flex;
+  }
+  .header-nav-list {
+    display: flex;
+    gap: 24px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+  }
+  .social-networks {
+    display: flex;
+    height: 24px;
+    gap: 18px;
+  }
+  .social-networks-icon {
+    fill: none;
+    stroke: var(--black-color);
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .mobile-menu-open-btn {
+    display: none;
+  }
+  .header-nav-item {
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-nav-item:hover,
+  .header-nav-item:focus {
+    color: var(--orange-color);
+  }
+  .nav-item-pseudo:after {
+    position: absolute;
+    display: none;
+    bottom: -8px;
+    content: '';
+    width: 50%;
+    height: 1px;
+    border-radius: 2px;
+    background-color: var(--orange-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .nav-item-pseudo:hover::after,
+  .nav-item-pseudo:focus::after {
+    display: block;
+  }
+  .social-networks-icon:hover,
+  .social-networks-icon:focus {
+    stroke: var(--orange-color);
+  }
+}

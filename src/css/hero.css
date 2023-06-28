@@ -1,0 +1,331 @@
+/*! Виконує Oleksii Kryvorotko */
+.hero {
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-bottom: 71px; */
+}
+
+.hero-title {
+  margin: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 30px;
+  background-size: cover;
+}
+
+.buy-btn {
+  display: flex;
+  border: none;
+
+  font-weight: 600;
+  line-height: 1.21;
+  color: var(--white-color);
+  align-items: center;
+  justify-content: center;
+  background: var(--orange-color);
+  border-radius: 100px;
+}
+
+.buy-btn:hover,
+.buy-btn:focus {
+  background: var(--lightorange-color);
+  color: var(--orange-color);
+}
+
+.hero-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white-color);
+  background-color: transparent;
+  border: 1px solid var(--white-color);
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+}
+
+.hero-link:hover,
+.hero-link:focus {
+  border: 1px solid var(--orange-color);
+  color: var(--orange-color);
+}
+
+.hero-scroll-link {
+  display: flex;
+  column-gap: 14px;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.03em;
+  color: var(--white-color);
+}
+
+.hero-scroll-link:hover,
+.hero-scroll-link:focus {
+  color: var(--orange-color);
+}
+
+.hero-scroll-link:hover .hero-scroll-btn,
+.hero-scroll-link:focus .hero-scroll-btn {
+  fill: var(--white-color);
+}
+
+.hero-scroll-btn {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: currentColor;
+  fill: var(--orange-color);
+}
+
+/* --------------------------------------------------------------------------------- */
+
+/* Mobile hero image 1x */
+@media screen and (max-device-pixel-ratio: 1) and (max-width: 767px),
+  screen and (max-resolution: 96dpi) and (max-width: 767px),
+  screen and (max-resolution: 1dppx) and (max-width: 767px) {
+  .hero-title {
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url('/img/hero_img/mobile/chocolate-covered-cocoa-powder.jpg');
+  }
+}
+/* Mobile hero image 2x */
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero-title {
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url('/img/hero_img/mobile/chocolate-covered-cocoa-powder@2x.jpg');
+  }
+}
+
+/*Тільки мобілка*/
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 375px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hero {
+    padding-bottom: 72px;
+  }
+
+  .hero-title {
+    padding: 395px 20px 20px 20px;
+  }
+
+  .hero-text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    margin-bottom: 32px;
+    color: var(--white-color);
+  }
+
+  .hero-button {
+    display: flex;
+
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 32px;
+  }
+
+  .buy-btn {
+    padding: 12px 28px;
+    margin-right: 14px;
+  }
+
+  .hero-link {
+    padding: 12px 27px;
+  }
+
+  .hero-scroll-btn {
+    width: 28px;
+    height: 28px;
+  }
+
+  .scroll-container {
+    display: flex;
+
+    column-gap: 12px;
+    flex-wrap: wrap;
+    row-gap: 32px;
+  }
+
+  .hero-scroll-text {
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .hero-svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* ----------------------------------------------------------------------------------------------------------------- */
+
+/*Мобілка і планшет*/
+@media screen and (max-width: 1199px) {
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-device-pixel-ratio: 1) and (min-width: 768px) and (max-width: 1199px),
+  screen and (max-resolution: 96dpi) and (min-width: 768px) and (max-width: 1199px),
+  screen and (max-resolution: 1dppx) and (min-width: 768px) and (max-width: 1199px) {
+  .hero-title {
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url('/img/hero_img/laptop/chocolate-covered-cocoa-powder.jpg');
+  }
+}
+/* Laptop image 2px */
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px) {
+  .hero-title {
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url('/img/hero_img/laptop/chocolate-covered-cocoa-powder@2x.jpg');
+  }
+}
+
+/*Тільки планшет*/
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    width: 768px;
+  }
+
+  .hero {
+    padding-bottom: 50px;
+  }
+
+  .hero-title {
+    padding: 670px 40px 40px 40px;
+  }
+
+  .hero-scroll-link {
+    margin-left: auto;
+  }
+
+  .scroll-container {
+    display: flex;
+  }
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/*Планшет і десктоп*/
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .hero {
+    padding-bottom: 72px;
+  }
+
+  .hero-text {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.21;
+    letter-spacing: -0.03em;
+    color: var(--white-color);
+    margin-bottom: 32px;
+    max-width: 484px;
+  }
+
+  .hero-button {
+    display: flex;
+    align-items: center;
+  }
+
+  .buy-btn {
+    padding: 14px 40px;
+    margin-right: 14px;
+  }
+
+  .hero-link {
+    padding: 14px 40px;
+  }
+
+  .hero-scroll-btn {
+    width: 32px;
+    height: 32px;
+  }
+
+  .hero-svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+@media screen and (max-device-pixel-ratio: 1) and (min-width: 1200px),
+  screen and (max-resolution: 96dpi) and (min-width: 1200px),
+  screen and (max-resolution: 1dppx) and (min-width: 1200px) {
+  .hero-title {
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url('/img/hero_img/desktop/chocolate-covered-cocoa-powder.jpg');
+  }
+}
+/* Desktop contacts image 2px */
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero-title {
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url('/img/hero_img/desktop/chocolate-covered-cocoa-powder@2x.jpg');
+  }
+}
+
+/*Тільки десктоп*/
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+
+  .hero-title {
+    padding: 380px 40px 40px 40px;
+  }
+
+  .hero-scroll-link {
+    margin-left: auto;
+  }
+
+  .scroll-container {
+    display: flex;
+  }
+}

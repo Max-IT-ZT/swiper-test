@@ -1,0 +1,145 @@
+.our-products {
+  display: flex;
+  gap: 18px;
+}
+.our-products-top-h {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.4;
+}
+.top-h-produtcs {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.products {
+  color: #fd9222;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+.choko-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 20px 52px;
+  background: #ffffff;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+}
+.choco-items {
+  background: #ffffff;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+}
+.our-products-img {
+  margin-bottom: 8px;
+}
+.our-products-bottom-h {
+  display: flex;
+  height: 24px;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  margin-bottom: 2px;
+}
+.our-products-p {
+  font-size: 12px;
+  line-height: 1.17;
+  color: rgba(17, 17, 17, 0.7);
+  text-align: center;
+  margin-bottom: 18px;
+}
+.our-products-batton {
+  display: flex;
+  width: 96px;
+  height: 33px;
+  font-weight: 600;
+  line-height: 1; /* 17px/17 */
+  color: #111111;
+  align-items: center;
+  border-radius: 100px;
+  background: #fafafa;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  padding: 8px 20px;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.our-products-batton:hover,
+.our-products-batton:focus {
+  background-color: var(--orange-color);
+  color: var(--white-color);
+  cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .display-1 {
+    display: none;
+  }
+}
+
+/* ------tablet------- */
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .choko-list:first-child {
+    display: none;
+  }
+  .dispaly-1 {
+    display: contents;
+  }
+
+  .our-products-top-h {
+    text-align: center;
+  }
+  .choco-items-box {
+    display: flex;
+    gap: 18px;
+    padding: 0;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+  .choko-list {
+    width: 270px;
+    padding: 32px 20px;
+    background: #ffffff;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+  }
+
+  .display-2 {
+    display: none;
+  }
+}
+
+/* -------DESCTOP------- */
+
+@media screen and (min-width: 1200px) {
+  /* .container-product {
+    width: 1200px;
+  } */
+  .display-1 {
+    display: contents;
+    display: flex;
+    flex-direction: column;
+  }
+  .display-2 {
+    display: contents;
+    display: flex;
+    flex-direction: column;
+    display: none;
+  }
+  .our-products-top-h {
+    text-align: center;
+  }
+
+  .choco-items-box {
+    display: flex;
+    padding: 0px 0px 0px 0px;
+    gap: 18px;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+}

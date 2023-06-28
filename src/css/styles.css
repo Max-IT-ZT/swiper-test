@@ -1,0 +1,43 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+@import url('./reset.css');
+@import url('./fonts.css');
+@import url('./variables.css');
+@import url('./general.css');
+@import url('./modal_buy-now.css');
+@import url('./modal_leave-a-review-about-our-chocolate.css');
+@import url('./modal_new_chocolate.css');
+
+/*! Виконує Victor Hromadskyi */
+@import url('./header.css');
+
+/*! Виконує Oleksii Kryvorotko */
+@import url('./hero.css');
+
+/*! Виконує Юрій Гримчак */
+@import url('./advantages.css');
+
+/*! Виконує Кутурланова Марина */
+@import url('./unique_components.css');
+
+/*! Виконує Олег Смоляков */
+@import url('./how_its_made.css');
+
+/*! Виконує Евген */
+@import url('./our_products.css');
+
+/*! Виконує Максим */
+@import url('./top_sellers.css');
+
+/*! Виконує Ann Buriachenko*/
+@import url('./reviews.css');
+
+/*! Виконує Юлия Гусарова */
+@import url('./subscribe.css');
+
+/*! Виконує Сергій */
+@import url('./footer.css');

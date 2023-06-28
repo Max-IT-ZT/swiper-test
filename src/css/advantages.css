@@ -1,0 +1,97 @@
+/*! Виконує Юрій Гримчак  */
+.advantages-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #1E1823;
+}
+
+@media screen and (min-width: 768px) {
+    .advantages-section {
+        padding-top: 50px;
+        padding-bottom: 85px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .advantages-section {
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .advantages-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .advantages-list {
+        gap: 70px
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .advantages-item {
+        padding-bottom: 18px;
+    }
+
+    .advantages-item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .advantages-item {
+        flex-basis: calc((100% - 32px) / 2);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .advantages-item {
+        flex-basis: calc((100% - 140px) / 3);
+        position: relative;
+    }
+
+    .advantages-item:not(:last-child)::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: -1px;
+        transform: translateY(-50%);
+        width: 0;
+        height: 124px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+}
+
+.advantages-icon-container {
+    width: 62px;
+    height: 62px;
+    margin-bottom: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+
+.advantages-title {
+    margin-bottom: 18px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.22;
+    color: #FFFFFF;
+}
+
+.advantages-descr {
+    max-width: 308px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 0.7);
+}

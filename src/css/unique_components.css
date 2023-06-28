@@ -1,0 +1,239 @@
+/*! Виконує Кутурланова Марина */
+.unique-components-title{
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    
+    
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.unique-components-title span{
+color: var(--orange-color);
+}
+
+.unique-components-text{
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.unique-components-list {
+    display: flex;
+}
+
+
+.unique-component-flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.unique-component-flip-card-inner:hover .unique-component-flip-card-front {
+    transform: rotateY(180deg);
+}
+.unique-component-flip-card-inner:hover .unique-component-flip-card-back {
+    transform: rotateY(360deg);
+}
+
+.unique-component-flip-card-front,
+.unique-component-flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+   
+    backface-visibility: hidden;
+
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    
+}
+
+.unique-component-flip-card {
+    perspective: 1000px;
+
+}
+
+.unique-component-flip-card-img{
+   position: absolute;
+   top: 28px;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+.unique-component-flip-card-name{
+   text-transform: capitalize;
+   font-weight: 600;
+   letter-spacing: -0.02em;
+   position: absolute;
+   bottom: 28px;
+   left: 28px;
+
+}
+
+.unique-component-first-card{
+    background-color: var(--orange-color);
+    border-radius: 15px;
+    color: var(--white-color);
+    }
+.unique-component-second-card{
+    background-color: transparent;
+    border-radius: 15px;
+    border: 1px solid var(--orange-color);
+}
+
+.unique-component-third-card{
+    background-color: #1E1823;
+    border-radius: 15px;
+    color: var(--white-color);
+}
+
+.unique-component-fourth-card{
+    background-color: transparent;
+    border-radius: 15px;
+    border: 1px solid var(--orange-color);
+
+}
+.unique-component-flip-card-back {
+   border-radius: 15px;
+   background-color: var(--white-color);
+   color: var(--black-color);
+  
+    padding: 28px;
+    text-align: start;
+    transform: rotateY(180deg);
+}
+
+.unique-component-flip-card-back-name{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: -0.03em;
+    margin-bottom: 8px;
+}
+
+.unique-component-flip-card-back-text{
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    margin-top: 14px;
+    
+    display: -webkit-box;
+        -webkit-line-clamp: 7;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+}
+.unique-component-buttons {
+    display: flex;
+    gap: 6px;
+}
+
+.unique-component-flip-card-back-name-btn {
+    color: var(--white-color);
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.2;
+
+    background-color: var(--orange-color);
+    border-radius: 35px;
+    border: transparent;
+    text-align: left;
+    padding: 6px 16px;
+}
+
+.unique-component-flip-card-back-benefits-btn {
+    color: #111111;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.2;
+
+    background-color: var(--body-bc);
+    border-radius: 35px;
+    border: 1px solid var(--orange-color);
+    text-align: left;
+    padding: 6px 16px;
+}
+
+
+
+@media screen  and (max-width: 767px) {
+    .unique-components{
+        padding-top: 72px;
+    }
+    .unique-components-title {
+     
+        margin-bottom: 24px;
+        max-width: 283px;
+    }
+
+    .unique-components-list {
+        flex-direction: column;
+        gap: 20px;
+
+    }
+
+    .unique-component-flip-card {
+        max-width: 335px;
+        height: 270px;
+        perspective: 1000px;
+       
+                }
+
+    .unique-components-text {
+        margin-bottom: 32px;
+        max-width: 335px;
+        }
+    
+}
+
+@media screen and (min-width: 768px) {
+
+    .unique-components {
+            padding-top: 100px;
+        }
+     .unique-components-title {
+        width: 411px;
+        margin-bottom: 28px;
+    }
+
+    .unique-components-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 32px;
+    }
+    .unique-component-flip-card {
+        width: 336px;
+        height: 270px;
+
+    
+}
+    .unique-components-text {
+        width: 486px;
+        margin-bottom: 50px;
+}
+}
+
+@media screen and (min-width: 1200px) {
+    .unique-components {
+       
+        padding-top: 128px;}
+
+    .unique-components-list {
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 19px;
+    }
+    .unique-component-flip-card {
+        width: 270px;
+        height: 270px;
+}
+.unique-component-flip-card-back {
+    padding: 20px;}
+}
